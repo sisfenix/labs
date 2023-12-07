@@ -27,7 +27,7 @@ build {
 
   provisioner "shell" {
     execute_command = "echo 'vagrant' | {{ .Vars }} sudo -E -S bash '{{ .Path }}'"
-    script          = "scripts/vagrant.sh"
+    script          = "../scripts/vagrant.sh"
   }
 
   // Convert machines to vagrant boxes
